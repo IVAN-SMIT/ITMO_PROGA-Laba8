@@ -4,11 +4,299 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29668fe0-31c0-4aa3-b3c1-99f044e5a1aa" name="Changes" comment="" />
+    <list default="true" id="29668fe0-31c0-4aa3-b3c1-99f044e5a1aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_openjfx_javafx_base_11_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_openjfx_javafx_base_win_11_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_openjfx_javafx_controls_11_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_openjfx_javafx_graphics_11_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/laba8ClientJavaFX.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/Controllers/CollectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/Controllers/CollectionManager555.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/Controllers/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/Controllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/Controllers/RegController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/Controllers/StartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/Controllers/WindowController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/Scene/StartWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/auxillary/Authorization.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/auxillary/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/auxillary/Language.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/auxillary/Language2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/auxillary/PasswordFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/connection/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/connection/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/connection/connectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/internationalization/language_es" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/internationalization/language_fr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/internationalization/language_nl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/internationalization/language_ru" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/Scene/RegWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/Scene/StartWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/Scene/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/Scene/loginWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/Scene/window.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/Scene/window222.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/69994541.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/Flag_of_Croatia-Slavonia.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/France-Flag-PNG-Download-Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/StartImg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/loginImg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/pngguru.com_21____копия_3rXjbw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/russia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/workWindow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/src/main/resources/img/Флаг-Испании.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Controllers/CollectionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Controllers/InitialController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Controllers/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Controllers/RegController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Controllers/StartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Controllers/WindowController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Scene/RegWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Scene/StartWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Scene/StartWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Scene/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Scene/initial.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Scene/loginWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Scene/window.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/Scene/window222.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/auxillary/Authorization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/auxillary/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/auxillary/Language2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/auxillary/PasswordFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/connection/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/connection/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/connection/connectionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/69994541.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/Flag_of_Croatia-Slavonia.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/France-Flag-PNG-Download-Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/StartImg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/loginImg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/pngguru.com_21____копия_3rXjbw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/russia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/workWindow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/img/Флаг-Испании.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaClient/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/7labaServer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/lib/jackson-annotations-2.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/lib/jackson-core-2.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/lib/jackson-databind-2.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/lib/jackson-datatype-jsr310-2.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/lib/postgresql-42.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_json_org_2_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/Maven__org_json_json_20190722.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/Maven__org_postgresql_pgadba_0_1_0_ALPHA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/jackson_annotations_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/jackson_core_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/jackson_databind_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/jackson_datatype_jsr310_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/libraries/postgresql_42_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/City/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/City/Climate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/City/Coordinates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/City/Human.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/City/StandardOfLiving.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/auxiliary/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/auxiliary/Commander.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/auxiliary/Corrector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/auxiliary/IdChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/AddCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/ClearCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/Execute_scriptCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/ExitCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/Filter_greater_than_car_codeCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/HelpCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/HistoryCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/InfoCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/Insert_atCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/Registration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/Remove_any_by_climateCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/Remove_by_idCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/Remove_lastCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/SaveCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/ShowCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/ShuffleCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/UpdateCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/commands/pashalOchka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/connection/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/connection/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/connection/ServerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/database/ConnectToDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/database/DatabaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/database/SQLCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/src/main/java/fileManager/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/City/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/City/Climate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/City/Coordinates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/City/Human.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/City/StandardOfLiving.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/auxiliary/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/auxiliary/Commander.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/auxiliary/Corrector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/auxiliary/IdChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/AddCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/ClearCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/Execute_scriptCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/ExitCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/Filter_greater_than_car_codeCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/HelpCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/HistoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/InfoCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/Insert_atCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/Remove_any_by_climateCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/Remove_by_idCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/Remove_lastCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/SaveCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/ShowCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/ShuffleCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/UpdateCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/commands/pashalOchka.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/connection/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/connection/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/connection/ServerManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/database/ConnectToDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/database/DatabaseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/database/SQLCommands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/fileManager/FileManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/target/classes/fileManager/FileManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/8labaServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/lib/jackson-annotations-2.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/lib/jackson-core-2.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/lib/jackson-databind-2.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/lib/jackson-datatype-jsr310-2.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/lib/postgresql-42.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/City/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/City/Climate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/City/Coordinates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/City/Human.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/City/StandardOfLiving.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/auxiliary/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/auxiliary/Commander.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/auxiliary/Corrector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/auxiliary/IdChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/AddCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/ClearCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/Execute_scriptCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/ExitCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/Filter_greater_than_car_codeCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/HelpCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/HistoryCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/InfoCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/Insert_atCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/Registration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/Remove_any_by_climateCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/Remove_by_idCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/Remove_lastCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/SaveCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/ShowCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/ShuffleCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/UpdateCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/commands/pashalOchka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/connection/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/connection/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/connection/ServerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/database/ConnectToDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/database/DatabaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/database/SQLCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/src/main/java/fileManager/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/City/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/City/Climate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/City/Coordinates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/City/Human.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/City/StandardOfLiving.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/auxiliary/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/auxiliary/Commander.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/auxiliary/Corrector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/auxiliary/IdChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/AddCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/ClearCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/Execute_scriptCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/ExitCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/Filter_greater_than_car_codeCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/HelpCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/HistoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/InfoCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/Insert_atCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/Remove_any_by_climateCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/Remove_by_idCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/Remove_lastCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/SaveCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/ShowCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/ShuffleCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/UpdateCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/commands/pashalOchka.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/connection/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/connection/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/connection/ServerManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/database/ConnectToDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/database/DatabaseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/database/SQLCommands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/fileManager/FileManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/8labaServer/target/classes/fileManager/FileManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fx/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -21,6 +309,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2A7nym4HaUY0TuWeW4DN5JIdACE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +318,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../8labaClient/8labaServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -37,6 +326,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -60,11 +350,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654369749986</updated>
-      <workItem from="1654369751117" duration="4018000" />
+      <workItem from="1654369751117" duration="3840000" />
+      <workItem from="1654380860206" duration="304000" />
+      <workItem from="1654381520516" duration="150000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
 </project>
