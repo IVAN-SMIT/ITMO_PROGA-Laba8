@@ -20,7 +20,6 @@ public class CollectionManager {
             String[] fields = element[count].split(" / ");
 
             count = count+1;
-
             System.out.println(Arrays.toString(fields));
             Long id = Long.valueOf(fields[0].trim());
             String name = fields[1];
