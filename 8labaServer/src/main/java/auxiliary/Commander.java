@@ -53,6 +53,7 @@ public class Commander {
         if(!myDatabase.isClosed()){
             System.out.println("Пользователь: "+username +"\n Распознана команда: "+command+"\n argument команды: " + argument+  "\n");
             switch (command) {
+                case "testConnect":response ="Все окей бро";break;
                 case "enter": response =Registration.asEnter(username, password, myDatabase);break;
                 case "registration": response = Registration.reg(username, password, myDatabase);;break;
                 case "help": response = new HelpCommand().run();break;

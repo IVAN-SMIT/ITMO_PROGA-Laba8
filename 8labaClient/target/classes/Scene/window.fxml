@@ -7,6 +7,9 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -20,6 +23,7 @@
             <Image url="@../img/workWindow.png" />
          </image>
       </ImageView>
+      <Text fx:id="nickname" fill="#000000d2" layoutX="567.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username" textAlignment="CENTER" wrappingWidth="74.40001220703124" />
       <Button fx:id="historyb" layoutX="20.0" layoutY="150.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="176.0" style="-fx-background-color: F6F3ED; -fx-border-color: silver; -fx-border-radius: 5;" text="История запросов" textAlignment="CENTER" textFill="#555555" AnchorPane.leftAnchor="20.0">
          <font>
             <Font name="Britannic Bold" size="10.0" />
@@ -68,7 +72,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="removeClimateb" layoutX="20.0" layoutY="300.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="176.0" style="-fx-background-color: F6F3ED; -fx-border-color: silver; -fx-border-radius: 5;" text="Удалить по климату" textAlignment="CENTER" textFill="#555555">
+      <Button fx:id="removeClimateb" layoutX="20.0" layoutY="300.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="176.0" style="-fx-background-color: F6F3ED; -fx-border-color: silver; -fx-border-radius: 5;" text="Удалить по climate" textAlignment="CENTER" textFill="#555555">
          <font>
             <Font name="Britannic Bold" size="10.0" />
          </font>
@@ -126,12 +130,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="588.0" layoutY="377.0" mnemonicParsing="false" prefHeight="6.0" prefWidth="51.0" style="-fx-background-radius: 5;" text="о" AnchorPane.rightAnchor="0.7999999999999545">
+      <Button fx:id="enter" layoutX="588.0" layoutY="377.0" mnemonicParsing="false" prefHeight="6.0" prefWidth="51.0" style="-fx-background-radius: 5;" text="о" AnchorPane.rightAnchor="0.7999999999999545">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <ChoiceBox fx:id="choseUser" layoutX="583.0" layoutY="14.0" opacity="0.0" prefHeight="38.0" prefWidth="42.0" AnchorPane.leftAnchor="583.0">
+      <ChoiceBox fx:id="choseUser" layoutX="583.0" layoutY="14.0" opacity="0.0" prefHeight="54.0" prefWidth="42.0" AnchorPane.leftAnchor="583.0">
          <cursor>
             <Cursor fx:constant="CLOSED_HAND" />
          </cursor>
@@ -167,7 +171,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <RadioButton fx:id="table" layoutX="588.0" layoutY="93.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="51.0" text="table" textFill="#00000080">
+      <RadioButton fx:id="tableb" layoutX="588.0" layoutY="93.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="51.0" text="table" textFill="#00000080">
          <font>
             <Font size="10.0" />
          </font>
@@ -177,16 +181,47 @@
             <Font size="10.0" />
          </font>
       </RadioButton>
-      <ScrollPane fx:id="scrolleeeeer" layoutX="217.0" layoutY="80.0" prefHeight="356.0" prefWidth="368.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+      <Text fx:id="infoShower" fill="RED" layoutX="22.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="175.99999999999994">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <ScrollPane fx:id="scrolleeeeer" layoutX="217.0" layoutY="80.0" prefHeight="356.0" prefWidth="368.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" AnchorPane.leftAnchor="217.0">
         <content>
-          <AnchorPane fx:id="scroll" minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="350.0">
+          <AnchorPane fx:id="scroll" minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="352.0">
                <children>
+                  <TableView fx:id="table" prefHeight="510.0" prefWidth="900.0">
+                    <columns>
+                      <TableColumn fx:id="idC" prefWidth="80" text="id" />
+                      <TableColumn fx:id="nameC" prefWidth="80" text="Name" />
+                        <TableColumn prefWidth="40" text="x y" fx:id="xyC" />
+                        <TableColumn fx:id="dateC" prefWidth="140" text="date" />
+                        <TableColumn fx:id="areaC" prefWidth="41" text="area" />
+                        <TableColumn fx:id="populationC" prefWidth="68" text="population" />
+                        <TableColumn fx:id="masC" prefWidth="134" text="meters above sea level" />
+                        <TableColumn fx:id="carcodeC" prefWidth="55" text="carCode" />
+                        <TableColumn fx:id="climateC" maxWidth="700.0" prefWidth="52.0" text="climate" />
+                        <TableColumn fx:id="standOfLivC" maxWidth="700.0" prefWidth="101.60009765625" text="standart of living" />
+                        <TableColumn fx:id="goverC" maxWidth="500.0" prefWidth="59.199951171875" text="governor" />
+                        <TableColumn fx:id="userC" maxWidth="50.0" prefWidth="196.800048828125" text="user" />
+                    </columns>
+                  </TableView>
                   <Text fx:id="console" layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hello world" visible="false" wrappingWidth="311.73675537109375">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Text>
                   <Canvas fx:id="graphic" height="356.0" layoutX="-1.0" layoutY="-4.0" width="358.0" />
+                  <TextField fx:id="nameF" layoutX="81.0" layoutY="8.0" prefHeight="26.0" prefWidth="158.0" promptText="Set name" visible="false" />
+                  <TextField layoutX="81.0" layoutY="42.0" prefHeight="26.0" prefWidth="58.0" promptText="Set x" visible="false" fx:id="xF" />
+                  <TextField fx:id="yF" layoutX="187.0" layoutY="42.0" prefHeight="26.0" prefWidth="51.0" promptText="Set y" visible="false" />
+                  <TextField fx:id="areaF" layoutX="81.0" layoutY="86.0" prefHeight="26.0" prefWidth="158.0" promptText="Set area" visible="false" />
+                  <TextField fx:id="populationF" layoutX="81.0" layoutY="125.0" prefHeight="26.0" prefWidth="158.0" promptText="Set population" visible="false" />
+                  <TextField fx:id="metersSeaLevelF" layoutX="81.0" layoutY="161.0" prefHeight="26.0" prefWidth="160.0" promptText="Set meters above sea level" visible="false" />
+                  <TextField fx:id="carCodeF" layoutX="81.0" layoutY="202.0" prefHeight="26.0" prefWidth="160.0" promptText="Set car code" visible="false" />
+                  <ChoiceBox fx:id="climateF" layoutX="81.0" layoutY="243.0" prefWidth="150.0" visible="false" />
+                  <ChoiceBox fx:id="StandartOfLivingF" layoutX="81.0" layoutY="280.0" prefWidth="150.0" visible="false" />
+                  <TextField fx:id="governorF" layoutX="81.0" layoutY="318.0" promptText="Set height of governor" visible="false" />
                </children>
             </AnchorPane>
         </content>
