@@ -18,12 +18,12 @@
             <Image url="@../img/loginImg.png" />
          </image>
       </ImageView>
-      <TextField fx:id="logField" layoutX="198.0" layoutY="195.0" prefHeight="34.0" prefWidth="241.0" promptText="Имя пользователя">
+      <TextField fx:id="logField" layoutX="198.0" layoutY="195.0" prefHeight="34.0" prefWidth="241.0" promptText="%Имя пользователя">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </TextField>
-      <PasswordField fx:id="PassField" layoutX="197.0" layoutY="246.0" prefHeight="34.0" prefWidth="242.0" promptText="Пароль">
+      <PasswordField fx:id="PassField" layoutX="197.0" layoutY="246.0" prefHeight="34.0" prefWidth="242.0" promptText="%Пароль">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -33,7 +33,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Text fx:id="visibleButton" layoutX="194.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вход" textAlignment="CENTER" wrappingWidth="254.93670654296875">
+      <Text fx:id="visibleButton" layoutX="194.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%Вход" textAlignment="CENTER" wrappingWidth="254.93670654296875">
          <font>
             <Font size="24.0" />
          </font>
@@ -49,13 +49,13 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Text fx:id="errLog" fill="#ff000080" layoutX="198.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Это поле обязательное" visible="false" wrappingWidth="144.53673934936523" />
-      <Text fx:id="errPass" fill="#ff000080" layoutX="198.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Это поле обязательное" visible="false" wrappingWidth="144.53673934936523" />
+      <Text fx:id="errLog" fill="#ff000080" layoutX="198.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%Это поле обязательное" visible="false" wrappingWidth="144.53673934936523" />
+      <Text fx:id="errPass" fill="#ff000080" layoutX="198.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%Это поле обязательное" visible="false" wrappingWidth="144.53673934936523" />
       <ChoiceBox fx:id="langb" layoutX="585.0" layoutY="402.0" opacity="0.0" prefHeight="58.0" prefWidth="58.0">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
       </ChoiceBox>
-      <Text fx:id="errEnter" fill="#ff000080" layoutX="198.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Такого пользователя не существует" visible="false" wrappingWidth="215.73675155639648" />
+      <Text fx:id="errEnter" fill="#ff000080" layoutX="198.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%Такого пользователя не существует" visible="false" wrappingWidth="215.73675155639648" />
    </children>
 </AnchorPane>

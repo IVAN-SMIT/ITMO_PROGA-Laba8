@@ -21,9 +21,7 @@ public class Request implements Serializable {
     public String getCommand() {
         return this.command;
     }
-
     public String getUsername() {return this.username;}
-
     public String getPassword() {return this.password;}
 }
 

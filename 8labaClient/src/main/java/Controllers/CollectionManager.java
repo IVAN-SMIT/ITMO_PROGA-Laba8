@@ -33,7 +33,7 @@ public class CollectionManager {
             count = count+1;
 
             System.out.println(Arrays.toString(fields));
-            Long id = Long.valueOf(fields[0].trim());
+            Long id = Long.valueOf(fields[0].trim().replace("[","").replace(", ",""));
             String name = fields[1];
             Integer x = Integer.valueOf(fields[2].split(" ")[0]);
             Integer y = Integer.valueOf(fields[2].split(" ")[1]);
@@ -46,7 +46,7 @@ public class CollectionManager {
             String climate = fields[8];
             String standardOfLiving = fields[9].trim();
             float governor = Float.parseFloat(fields[10]);
-            String username = fields[11];
+            String username = fields[11].replace("]","");
 
             cityCollection.add(new City(id, name, coord, localDate, area, population, metersAboveSeaLevel, carCode, climate, standardOfLiving, governor, username));
         }

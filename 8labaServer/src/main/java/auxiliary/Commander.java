@@ -53,6 +53,7 @@ public class Commander {
         if(!myDatabase.isClosed()){
             System.out.println("Пользователь: "+username +"\n Распознана команда: "+command+"\n argument команды: " + argument+  "\n");
             switch (command) {
+                case "search":response = new findLikeThese().run(argument, cityCollection);break;
                 case "testConnect":response ="Все окей бро";break;
                 case "enter": response =Registration.asEnter(username, password, myDatabase);break;
                 case "registration": response = Registration.reg(username, password, myDatabase);;break;
@@ -62,6 +63,7 @@ public class Commander {
                 case "3137best": pashalOchka.run(argument);break;// интересно, а что же это......
                 case "history": response = new HistoryCommand().run(history);break;
                 case "show": response = new ShowCommand().run(argument, cityCollection);break;
+                case "grpk": response = new Graphics().run(argument, cityCollection);break;
                 case "clear": cityCollection = new  ClearCommand().run(argument, myDatabase, cityCollection);break;
                 case "add":  cityCollection = new AddCommand().run(argument, cityCollection, username, myDatabase);break;
                 case "remove_by_id":response =  new Remove_by_idCommand().run(argument, cityCollection, username);break;

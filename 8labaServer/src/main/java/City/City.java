@@ -23,7 +23,7 @@ public class City {
     private StandardOfLiving standardOfLiving; //Поле не может быть null
     private Human governor; //Поле не может быть null
 
-    String username;
+    private String username;
 
     public City(){super();}
     public City(Long id, String name, Coordinates coordinates,

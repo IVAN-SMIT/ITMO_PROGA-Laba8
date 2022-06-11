@@ -5,25 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29668fe0-31c0-4aa3-b3c1-99f044e5a1aa" name="Changes" comment="first">
+      <change afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/internationalization/Bundle_en_AU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/internationalization/Bundle_es_AU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/internationalization/Bundle_fr_AU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/internationalization/Bundle_ru_AU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/internationalization/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commands/Graphics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commands/findLikeThese.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/CollectionManager555.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/RegController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/RegController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/StartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/StartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/WindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/Controllers/WindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/auxillary/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/auxillary/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/Scene/StartWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/Scene/StartWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/auxillary/Language.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/auxillary/Language2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/auxillary/Language2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/connection/connectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/java/connection/connectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/internationalization/language_es" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/internationalization/language_fr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/internationalization/language_nl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/java/internationalization/language_ru" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/resources/Scene/RegWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/resources/Scene/RegWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/resources/Scene/StartWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/resources/Scene/StartWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/resources/Scene/loginWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/resources/Scene/loginWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../8labaClient/src/main/resources/Scene/window.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/src/main/resources/Scene/window.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/CollectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/CollectionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/RegController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/RegController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/StartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/StartController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/WindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Controllers/WindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/RegWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/RegWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/StartWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/StartWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/StartWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/StartWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/loginWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/loginWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/window.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/Scene/window.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/auxillary/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/auxillary/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/auxillary/Language2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/auxillary/Language2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8labaClient/target/classes/connection/connectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../8labaClient/target/classes/connection/connectionManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/City/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/City/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/auxiliary/Commander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auxiliary/Commander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/City/Coordinates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/City/Coordinates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Remove_by_idCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Remove_by_idCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Remove_lastCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Remove_lastCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/City/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/City/City.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/auxiliary/Commander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auxiliary/Commander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/Filter_greater_than_car_codeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/Filter_greater_than_car_codeCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/ShowCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/ShowCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/AddCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/AddCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/Remove_by_idCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/Remove_by_idCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/Remove_lastCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/Remove_lastCommand.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -87,7 +131,11 @@
       <workItem from="1654492394392" duration="521000" />
       <workItem from="1654532102639" duration="148000" />
       <workItem from="1654627486841" duration="632000" />
-      <workItem from="1654716219526" duration="1979000" />
+      <workItem from="1654716219526" duration="2064000" />
+      <workItem from="1654804414385" duration="4350000" />
+      <workItem from="1654864310110" duration="9583000" />
+      <workItem from="1654934625351" duration="38000" />
+      <workItem from="1654934681762" duration="3097000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1654381782592</created>

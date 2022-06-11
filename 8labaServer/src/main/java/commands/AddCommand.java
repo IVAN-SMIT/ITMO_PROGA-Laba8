@@ -31,13 +31,9 @@ public class AddCommand implements Command {
         try {
 
             int index = cityCollection.size();
-
             //Statement st = database.createStatement(); //простой SQL-запрос без параметров
            // ResultSet rs = st.executeQuery("SELECT last_value FROM cityCollection_id_seq");
-
-
             //id = Long.parseLong(rs.getString(1));
-
             //rs.close();
            // st.close();
 
@@ -70,7 +66,7 @@ public class AddCommand implements Command {
         }
 
         DatabaseManager.saveCollection(cityCollection, database, username);
-        Commander.response = "Элемент успешно добавлен!";
+        Commander.response = "Элемент успешно отправлен на сервер";
         return cityCollection;
     }
 

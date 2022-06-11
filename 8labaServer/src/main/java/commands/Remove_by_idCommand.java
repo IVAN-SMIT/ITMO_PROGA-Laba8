@@ -20,7 +20,7 @@ public class Remove_by_idCommand implements Command {
             if (res.size() == 0){
                 return "Элемент cо значением id:" + numId + " не найден или к нему нет доступа";
             } else {
-                return "Элемент:\n" + res + "\nCо значением id:" + numId + " был удалён.";
+                return "Элемент cо значением id:" + numId + " был удалён.";
             }
         }catch (Exception i){
             return "Введены неверные данные! Попробуйте снова. \n(начните с remove_by_id + id желаемого элемента)";

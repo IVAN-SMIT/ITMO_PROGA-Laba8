@@ -24,5 +24,4 @@ public class PasswordFormat {
         }
         return hexString.toString();
     }
-
 }

@@ -5,7 +5,7 @@ import java.util.ResourceBundle;
 
 import Scene.StartWindow;
 import auxillary.Authorization;
-import auxillary.Language2;
+import auxillary.Language;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -76,7 +76,7 @@ public class LoginController {
 
                                 Stage stage = (Stage) enter.getScene().getWindow();
                                 stage.close();
-                                FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("window.fxml"));
+                                FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("window.fxml"), StartWindow.resourceBundle);
                                 Scene scene = new Scene(fxmlLoader.load(), 640, 452);
                                 stage.setTitle("I1 collection");
                                 stage.setResizable(false);
@@ -119,7 +119,7 @@ public class LoginController {
             Stage stage = (Stage) backB.getScene().getWindow();
             stage.close();
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("StartWindow.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("StartWindow.fxml"),StartWindow.resourceBundle);
                 Scene scene = new Scene(fxmlLoader.load(), 640, 460);
                 stage.setTitle("I1 collection");
                 stage.setResizable(false);
@@ -128,15 +128,17 @@ public class LoginController {
             }catch (Exception e){
                 System.out.println(e);}
         });
-        Language2.addLanguage(langb);
-
-        assert PassField != null : "fx:id=\"PassField\" was not injected: check your FXML file 'loginWindow.fxml'.";
-        assert backB != null : "fx:id=\"backB\" was not injected: check your FXML file 'loginWindow.fxml'.";
-        assert enter != null : "fx:id=\"enter\" was not injected: check your FXML file 'loginWindow.fxml'.";
-        assert langb != null : "fx:id=\"langb\" was not injected: check your FXML file 'loginWindow.fxml'.";
-        assert logField != null : "fx:id=\"logField\" was not injected: check your FXML file 'loginWindow.fxml'.";
-        assert errLog != null : "fx:id=\"errLog\" was not injected: check your FXML file 'loginWindow.fxml'.";
-        assert errPass != null : "fx:id=\"errPass\" was not injected: check your FXML file 'loginWindow.fxml'.";
+        Language.addLanguage(langb);
+        langb.setOnAction(actionEvent -> {new Language().changeLanguage(langb.getValue());
+            try{
+                FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("loginWindow.fxml"), StartWindow.resourceBundle);
+                Scene scene = new Scene(fxmlLoader.load(), 640, 460);
+                Stage stage = (Stage) langb.getScene().getWindow();
+                stage.close();
+                stage.setTitle("I1 collection");
+                stage.setResizable(false);stage.setScene(scene);stage.show();
+            }catch (Exception e){System.out.println(e);}
+        });
 
     }
      void show(Text button, String mess){
@@ -154,5 +156,6 @@ public class LoginController {
 
     public String getPassword(){return password;}
     public void setPassword(String pass){this.password = pass;}
+
 }
 

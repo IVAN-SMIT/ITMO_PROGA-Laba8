@@ -93,7 +93,6 @@ public class City {
     public StringProperty usernameProperty(){return username;}
     public void setUsername(String value){ username.set(value);}
 
-
     @Override
     public String toString(){
         return id.toString()+" " + name.toString()+" "

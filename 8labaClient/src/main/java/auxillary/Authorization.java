@@ -60,7 +60,6 @@ public class Authorization {
             } catch (IOException e) {
                 System.out.println(e);
             }
-
             if(client!= null) {
                 password = String.valueOf(pass);
                 passwordFin = new PasswordFormat().toSHA256(password);

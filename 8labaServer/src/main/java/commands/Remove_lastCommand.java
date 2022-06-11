@@ -15,16 +15,15 @@ import java.util.Stack;
 
 public class Remove_lastCommand implements Command {
     public String run(Stack<City> cityCollection, Connection myDatabase, String username) throws SQLException {
-
+        try {
             cityCollection.peek();
             new SQLCommands().clearDataBase(myDatabase);
             DatabaseManager.saveCollection(cityCollection, myDatabase, username);
-          //  new SQLCommands().deleteByID()
-        System.out.println(username+ " удалил последний элемент\n");
-        return "Удален элемент:\n" + cityCollection.pop().toString();
-
+            //  new SQLCommands().deleteByID()
+            System.out.println(username + " удалил последний элемент\n");
+            return "Удален элемент:\n" + cityCollection.pop().toString();
+        }catch (Exception e){return "В коллекции не осталось элементов";}
         }
-
     }
 
 

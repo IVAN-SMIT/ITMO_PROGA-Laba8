@@ -14,6 +14,7 @@ public class connectionManager {
     private  String address = null;
     private  int port = 0;
     public static String answer = null;
+    public static String connectionMess = null;
 
     public connectionManager(String address, int port) throws IOException {
         this.address = address;
@@ -25,12 +26,14 @@ public class connectionManager {
 
     public  Response sendMessage(Request msg) {
         if (!client.isOpen()) {
+            connectionMess ="Подключаемся к серверу...";
             System.out.println("Подключаемся к серверу...");
 
             try {
                 client = SocketChannel.open(new InetSocketAddress(address, port));
                 client.configureBlocking(true);
             } catch (Exception e) {
+                connectionMess = "Не удается подключиться к серверу.";
                 System.out.println("Не удается подключиться к серверу.");
                 return null;
             }
@@ -54,10 +57,12 @@ public class connectionManager {
                 System.out.println(response.gettextResponse()); //печатаем то что прилетает с сервера сразу же
                 answer = response.gettextResponse();
             } catch (Exception e) {
+                connectionMess = "Произошла ошибка приема с сервера.";
                 System.out.println("Произошла ошибка приема с сервера.");
             }
 
         } catch (IOException e) {
+            connectionMess ="Попытка соединения...";
             System.out.println("Попытка соединения...");
 
             try {

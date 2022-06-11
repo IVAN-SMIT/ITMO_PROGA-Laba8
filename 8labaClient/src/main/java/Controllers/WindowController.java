@@ -6,52 +6,71 @@ import java.util.*;
 import Scene.StartWindow;
 import auxillary.Authorization;
 import auxillary.City;
-import auxillary.Language2;
+import auxillary.Language;
 import connection.Request;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.CornerRadii;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
 import static Controllers.LoginController.password;
 import static Controllers.LoginController.username;
 import static connection.connectionManager.answer;
-import static connection.connectionManager.client;
+import static connection.connectionManager.connectionMess;
 
 public class WindowController {
-
     private ObservableList<City> usersData = FXCollections.observableArrayList();
 
-    @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
+    @FXML private ResourceBundle resources;
+    @FXML private URL location;
 
 
     @FXML private ChoiceBox<String> choseUser;
-
     @FXML private CheckBox gayChecker;
 
     @FXML private Button addb;
     @FXML private Button b3137;
     @FXML private Button clearb;
     @FXML private Button exitb;
+
     @FXML private Button filterCarCodeb;
+    @FXML private Button filterBackButton;
+    @FXML private Button enterFilterButton;
+    @FXML private Text enterFilterText;
+    @FXML private Text backFilterIdText1;
+    @FXML private TextField carcodeValue;
+
     @FXML public Button helpb;
     @FXML private Button historyb;
     @FXML private Button infob;
     @FXML private Button insertAtb;
     @FXML private ChoiceBox<String> langb;
+
     @FXML private Button removeClimateb;
+    @FXML private ChoiceBox<String> ChoseCLimate;
+
     @FXML private Button removeIDb;
+    @FXML private Button backRemoveIdButton;
+    @FXML private Text backRemoveIdText;
+    @FXML private Button enterRemoveIdButton;
+    @FXML private Text enterRemoveIdText;
+    @FXML private TextField removeIdField;
+
     @FXML private Button removeLastB;
     @FXML private Button showb;
     @FXML private Button shuffleb;
@@ -78,6 +97,12 @@ public class WindowController {
     @FXML private TextField xF;
     @FXML private TextField yF;
     @FXML private ChoiceBox<String> StandartOfLivingF;
+    @FXML private Text climatetext;
+    @FXML private Text standOfLivText;
+    @FXML private Button enterForAddButton;
+    @FXML private TextField aux1;
+    @FXML private TextField aux2;
+    @FXML private TextField updateIdField;
 
     @FXML private Button enter;
 
@@ -96,42 +121,65 @@ public class WindowController {
     @FXML private TableColumn<City, String> userC;
     @FXML private TableColumn<City, String> xyC;
 
+    @FXML private TextField SearchField;
+    @FXML private Button SearchButton;
+    @FXML private Text serrchErr;
 
+    @FXML private Button deleteRow;
+
+    @FXML private ImageView cityImg;
 
 
 
     @FXML
     void initialize() {
-        String dude="dude";
-        try {nickname.setText(Authorization.getUsername());
-        }catch (Exception e){ServerError("Ошибка подключения к серверу");}
-        if(Authorization.getUsername()==null){dude = "dude";nickname.setText(dude);}
+        try {
+            nickname.setText(username);
+        } catch (Exception e) {
+            ServerError("Ошибка подключения к серверу");
+        }
         scrolleeeeer.setVisible(false);
 
-        exitb.setOnAction(actionEvent -> {System.exit(101);});
+        exitb.setOnAction(actionEvent -> {
+            System.exit(101);
+        });
 
-        helpb.setOnAction(actionEvent -> {hide();
+        helpb.setOnAction(actionEvent -> {
+            hide();
             try {
-            setWindowSizeY(510,350);
-            Authorization.client.sendMessage(new Request("help", username, password));
-            console.setText(answer);console.setVisible(true);}
-            catch (Exception e){ServerError("Ошибка подключения к серверу");}
+                setWindowSizeY(510, 350);
+                setWindowSizeX(350, 350);
+                Authorization.client.sendMessage(new Request("help", username, password));
+                console.setText(answer);
+                console.setVisible(true);
+            } catch (Exception e) {
+                ServerError("Ошибка подключения к серверу");
+            }
         });
 
-        infob.setOnAction(actionEvent -> {hide();
-            try{
-            setWindowSizeY(100,120);
-            Authorization.client.sendMessage(new Request("info", username, password));
-            console.setText(answer);console.setVisible(true);}
-            catch (Exception e){ServerError("Ошибка подключения к серверу");}
+        infob.setOnAction(actionEvent -> {
+            hide();
+            try {
+                setWindowSizeY(100, 120);
+                setWindowSizeX(350, 350);
+                Authorization.client.sendMessage(new Request("info", username, password));
+                console.setText(answer);
+                console.setVisible(true);
+            } catch (Exception e) {
+                ServerError("Ошибка подключения к серверу");
+            }
         });
 
-        historyb.setOnAction(actionEvent -> {hide();
-            try{
-            setWindowSizeY(90,100);
-            Authorization.client.sendMessage(new Request("history",username, password));
-            console.setText(answer);console.setVisible(true);}
-            catch (Exception e){ServerError("Ошибка подключения к серверу");}
+        historyb.setOnAction(actionEvent -> {
+            hide();
+            try {
+                setWindowSizeY(90, 100);
+                Authorization.client.sendMessage(new Request("history", username, password));
+                console.setText(answer);
+                console.setVisible(true);
+            } catch (Exception e) {
+                ServerError("Ошибка подключения к серверу");
+            }
         });
 
         ToggleGroup group = new ToggleGroup();
@@ -140,149 +188,435 @@ public class WindowController {
         tableb.setVisible(false);
         map.setVisible(false);
 
-        showb.setOnAction(actionEvent -> {hide();
+
+        showb.setOnAction(actionEvent -> {
+            hide();
             try {
-                setWindowSizeY(510,350);tableb.fire();
-                try{Authorization.client.sendMessage(new Request("show", username, password));
-                    table.setVisible(true);
-                    setWindowSizeX(850, 368);
-                    table.getItems().clear();
-                    setCollums(answer);
-                    tableb.setVisible(true);
-                    map.setVisible(true);}
-                catch (Exception e){ServerError("Ошибка подключения к серверу");}
-            }catch (Exception e){ServerError(String.valueOf(e));System.out.println(e);}
-        });
-
-        shuffleb.setOnAction(actionEvent -> {hide();
-            try{
-            setWindowSizeY(90,100);
-            Authorization.client.sendMessage(new Request("shuffle", username, password));
-            console.setText(answer);console.setVisible(true);}
-            catch (Exception e){ServerError("Ошибка подключения к серверу");}
-        });
-
-        filterCarCodeb.setOnAction(actionEvent -> {hide();
-            try {Authorization.client.sendMessage(new Request("filter_greater_than_car_code 100", username, password));
-                System.out.println(answer);
+                setWindowSizeY(510, 350);
+                tableb.fire();
                 table.setVisible(true);
-                setWindowSizeX(850, 368);
+                setWindowSizeX(900, 368);
+                Authorization.client.sendMessage(new Request("show", username, password));
+                table.getItems().clear();
                 setCollums(answer);
                 tableb.setVisible(true);
                 map.setVisible(true);
-            }catch (Exception e){ServerError(String.valueOf(e));System.out.println(e);}
+                tableb.setOnAction(actionEvent1 -> {
+                    hide();
+                    if (tableb.isSelected()) {
+                        try {
+                            Authorization.client.sendMessage(new Request("show", username, password));
+                            table.setVisible(true);
+                            setWindowSizeX(900, 368);
+                            table.getItems().clear();
+                            setCollums(answer);
+                            tableb.setVisible(true);
+                            map.setVisible(true);
+                        } catch (Exception e) {
+                            ServerError("Ошибка подключения к серверу");
+                        }
+                    }
+                });
+
+                table.setOnMousePressed(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        infoShower.setVisible(false);
+                        if (event.isPrimaryButtonDown() && event.getClickCount() == 2) {
+                            Node node = ((Node) event.getTarget()).getParent();
+                            TableRow row;
+                            if (node instanceof TableRow) {
+                                row = (TableRow) node;
+                            } else {
+                                row = (TableRow) node.getParent();
+                            }
+
+                            try {
+                                String answ = String.valueOf(table.getColumns().get(0).getCellObservableValue(row.getIndex()).getValue());
+                                if (answ != null) {
+                                    deleteRow.setVisible(true);
+                                    deleteRow.setOnAction(actionEvent1 -> {
+                                        try {
+                                            Authorization.client.sendMessage(new Request("remove_by_id " + answ, username, password));
+                                            if (answer.contains("не найден или к нему нет доступа")) {
+                                                ServerError("У вас нет доступа");
+                                                table.setVisible(true);
+                                                tableb.setVisible(true);
+                                                map.setVisible(true);
+                                            }
+                                        } catch (Exception e) {
+                                            ServerError(String.valueOf(e));
+                                        }
+                                    });
+                                }
+                            } catch (Exception e) {
+                                infoShower.setText("Выбрана пустая строка");
+                                infoShower.setVisible(true);
+                            }
+                        }
+                    }
+                });
+                map.setOnAction(actionEvent1 -> {
+                    if (map.isSelected()) {
+                        try {
+                            hide();
+                            setWindowSizeY(356, 356);
+                            setWindowSizeX(356, 356);
+                            tableb.setVisible(true);
+                            map.setVisible(true);
+                            Authorization.client.sendMessage(new Request("grpk", username, password));
+                            String[] element = answer.split("/");
+                            int count = 0;
+                            GraphicsContext context = graphic.getGraphicsContext2D();
+                            drawAxis(context);
+                            while (count < element.length) {
+                                String[] fields = element[count].split(" ");
+                                count = count + 1;
+                                int x = Integer.parseInt(fields[0]);
+                                int y = Integer.parseInt(fields[1]);
+                                int area = Integer.parseInt(fields[2]);
+                                context.setFill(Color.color(Math.random(), Math.random(), Math.random()));
+                                context.strokeRect(100 + x, 180 - y, area / 2, 10);
+                            }
+                            scrolleeeeer.setVisible(true);
+                            graphic.setVisible(true);
+                        } catch (Exception e) {
+                            ServerError(String.valueOf(e));
+                        }
+                    }
+                });
+            } catch (Exception e) {
+                ServerError(String.valueOf(e));
+                System.out.println(e);
+            }
         });
 
-        removeLastB.setOnAction(actionEvent -> {hide();
-            try{
-            setWindowSizeY(90,100);
-            Authorization.client.sendMessage(new Request("remove_last", username,password));
-            console.setText(answer);console.setVisible(true);}
-            catch (Exception e){ServerError("Ошибка подключения к серверу");}
+
+        shuffleb.setOnAction(actionEvent -> {
+            hide();
+            try {
+                setWindowSizeY(90, 100);
+                Authorization.client.sendMessage(new Request("shuffle", username, password));
+                console.setText(answer);
+                console.setVisible(true);
+            } catch (Exception e) {
+                ServerError("Ошибка подключения к серверу");
+            }
         });
 
-        clearb.setOnAction(actionEvent -> {hide();
-            try{
-            setWindowSizeY(90, 100);
-            Authorization.client.sendMessage(new Request("clear", username,password));
-            console.setText(answer);console.setVisible(true);}
-            catch (Exception e){ServerError("Ошибка подключения к серверу");}
+        filterCarCodeb.setOnAction(actionEvent -> {
+            hide();
+            filterCarCodeb.setVisible(false);
+            backFilterIdText1.setVisible(true);
+            enterFilterButton.setVisible(true);
+            carcodeValue.setVisible(true);
+            enterFilterText.setVisible(true);
+            filterBackButton.setVisible(true);
+            carcodeValue.clear();
+            carcodeValue.setBackground(new Background(new BackgroundFill(Color.WHITE, CornerRadii.EMPTY, Insets.EMPTY)));
+            filterBackButton.setOnAction(actionEvent1 -> {
+                filterCarCodeb.setVisible(true);
+                backFilterIdText1.setVisible(false);
+                enterFilterButton.setVisible(false);
+                carcodeValue.setVisible(false);
+                enterFilterText.setVisible(false);
+                filterBackButton.setVisible(false);
+            });
+            try {
+                enterFilterButton.setOnAction(actionEvent1 -> {
+                    hide();
+                    if (!carcodeValue.getText().equals("")) {
+                        Authorization.client.sendMessage(new Request("filter_greater_than_car_code " + carcodeValue.getText(), username, password));
+                        table.setVisible(true);
+                        setWindowSizeX(850, 368);
+                        setWindowSizeY(510, 350);
+                        table.getItems().clear();
+                        setCollums(answer);
+                        filterCarCodeb.setVisible(true);
+                        backFilterIdText1.setVisible(false);
+                        enterFilterButton.setVisible(false);
+                        carcodeValue.setVisible(false);
+                        enterFilterText.setVisible(false);
+                        filterBackButton.setVisible(false);
+                    } else
+                        carcodeValue.setBackground(new Background(new BackgroundFill(Color.GREENYELLOW, CornerRadii.EMPTY, Insets.EMPTY)));
+                });
+
+            } catch (Exception e) {
+                ServerError(String.valueOf(e));
+                System.out.println(e);
+            }
         });
 
-        b3137.setOnAction(actionEvent -> {hide();
-            try{Authorization.client.sendMessage(new Request("3137best", username, password));}
-            catch (Exception e){ServerError("Ошибка подключения к серверу");}
+        removeIDb.setOnAction(actionEvent -> {
+            hide();
+            removeIDb.setVisible(false);
+            backRemoveIdButton.setVisible(true);
+            backRemoveIdText.setVisible(true);
+            removeIdField.setVisible(true);
+            removeIdField.clear();
+            backRemoveIdButton.setOnAction(actionEvent1 -> {
+                enterRemoveIdButton.setVisible(false);
+                enterRemoveIdText.setVisible(false);
+                removeIdField.setVisible(false);
+                removeIDb.setVisible(true);
+                backRemoveIdButton.setVisible(false);
+                backRemoveIdText.setVisible(false);
+            });
+            enterRemoveIdButton.setVisible(true);
+            enterRemoveIdText.setVisible(true);
+            try {
+                enterRemoveIdButton.setOnAction(actionEvent1 -> {
+                    hide();
+                    Authorization.client.sendMessage(new Request("remove_by_id " + removeIdField.getText(), username, password));
+                    setWindowSizeY(90, 100);
+
+                    console.setText(answer);
+                    console.setVisible(true);
+                    enterRemoveIdButton.setVisible(false);
+                    enterRemoveIdText.setVisible(false);
+                    removeIdField.setVisible(false);
+                    removeIDb.setVisible(true);
+                    backRemoveIdButton.setVisible(false);
+                    backRemoveIdText.setVisible(false);
+
+                });
+            } catch (Exception e) {
+                ServerError(String.valueOf(e));
+            }
         });
 
-        addb.setOnAction(actionEvent -> {hide();
+
+        ChoseCLimate.getItems().add("STEPPE");
+        ChoseCLimate.getItems().add("MONSOON");
+        ChoseCLimate.getItems().add("MEDITERRANIAN");
+        ChoseCLimate.getItems().add("OCEANIC");
+        ChoseCLimate.setOnAction(actionEvent -> {
+            hide();
+            ChoseCLimate.getValue();
+            System.out.println(ChoseCLimate.getValue());
+            try {
+                if (ChoseCLimate.getValue() != null) {
+                    Authorization.client.sendMessage(new Request("remove_any_by_climate " + ChoseCLimate.getValue(), username, password));
+                    setWindowSizeY(90, 100);
+                    setWindowSizeX(320, 352);
+                    console.setText(answer);
+                    console.setVisible(true);
+                }
+            } catch (Exception e) {
+                ServerError(String.valueOf(e));
+            }
+
+        });
+
+        removeLastB.setOnAction(actionEvent -> {
+            hide();
+            try {
+                setWindowSizeY(90, 100);
+                Authorization.client.sendMessage(new Request("remove_last", username, password));
+                setWindowSizeY(90, 100);
+                setWindowSizeX(352, 352);
+                console.setText(answer);
+                console.setVisible(true);
+            } catch (Exception e) {
+                ServerError("Ошибка подключения к серверу");
+            }
+        });
+
+        clearb.setOnAction(actionEvent -> {
+            hide();
+            try {
+                setWindowSizeY(90, 100);
+                setWindowSizeX(352, 352);
+                Authorization.client.sendMessage(new Request("clear", username, password));
+                console.setText(answer);
+                console.setVisible(true);
+            } catch (Exception e) {
+                ServerError("Ошибка подключения к серверу");
+            }
+        });
+
+        b3137.setOnAction(actionEvent -> {
+            hide();
+            try {
+                Authorization.client.sendMessage(new Request("3137best", username, password));
+            } catch (Exception e) {
+                ServerError("Ошибка подключения к серверу");
+            }
+        });
+
+
+        climateF.getItems().add("STEPPE");
+        climateF.getItems().add("MONSOON");
+        climateF.getItems().add("MEDITERRANIAN");
+        climateF.getItems().add("OCEANIC");
+
+        StandartOfLivingF.getItems().add("VERY_HIGH");
+        StandartOfLivingF.getItems().add("HIGH");
+        StandartOfLivingF.getItems().add("NIGHTMARE");
+
+        addb.setOnAction(actionEvent -> {
+            hide();
             clearData();
             setWindowSizeY(340, 356);
+            setWindowSizeX(350, 350);
             showForAdd(true);
+            enterForAddButton.setOnAction(actionEvent1 -> {
+                try {
+                    String data = getDataFromAdd();
+                    if (!data.equals("дичь")) {
+                        Authorization.client.sendMessage(new Request("add " + getDataFromAdd(), username, password));
+                        showForAdd(false);
+                        setWindowSizeY(90, 100);
+                        setWindowSizeX(352, 352);
+                        console.setText(answer);
+                        console.setVisible(true);
+                    } else {
+                        System.out.println("Введи всё");
+                        ServerError("Введите все значения");
+                    }
+                } catch (Exception e) {
+                    ServerError("Неверные форматы значений!");
+                    hide();
+                    setWindowSizeY(100, 120);
+                    console.setText("В каком-то из полей допущена ошибка! Повторите попытку.");
+                    console.setVisible(true);
+                }
 
-            enter.setOnAction(actionEvent1 -> {
-                String data = getDataFromAdd();
-                if (!data.equals("дичь")) {
-                    System.out.println(getDataFromAdd());
-                }else System.out.println("Введи всё");
             });
-
         });
 
+        updateb.setOnAction(actionEvent -> {
+            hide();
+            updateIdField.clear();
+            clearData();
+            setWindowSizeY(340, 356);
+            setWindowSizeX(350, 350);
+            showForAdd(true);
+            updateIdField.setVisible(true);
+            enterForAddButton.setOnAction(actionEvent1 -> {
+                try {
+                    String data = getDataFromAdd();
+                    String upId = updateIdField.getText() + "; ";
+                    if (!data.equals("дичь")) {
+                        Authorization.client.sendMessage(new Request("update " + upId + getDataFromAdd(), username, password));
+                        showForAdd(false);
+                        updateIdField.setVisible(false);
+                        setWindowSizeY(90, 100);
+                        setWindowSizeX(352, 352);
+                        console.setText(answer);
+                        console.setVisible(true);
+                    } else {
+                        ServerError("Введите все значения");
+                    }
+                } catch (Exception e) {
+                    ServerError("Неверные форматы значений!");
+                    hide();
+                    setWindowSizeY(100, 120);
+                    console.setText("В каком-то из полей допущена ошибка! Повторите попытку.");
+                    console.setVisible(true);
+                }
+            });
+        });
 
-        Language2.addLanguage(langb);
+        SearchButton.setOnAction(actionEvent -> {
+            serrchErr.setVisible(false);
+            if (Objects.equals(SearchField.getText(), "")) {
+                serrchErr.setText("заполните поле");
+                serrchErr.setVisible(true);
+            } else {
+                hide();
+                try {
+                    setWindowSizeY(510, 350);
+                    tableb.fire();
+                    table.setVisible(true);
+                    setWindowSizeX(900, 368);
+                    Authorization.client.sendMessage(new Request("search " + SearchField.getText(), username, password));
+                    table.getItems().clear();
+                    setCollums(answer);
+                } catch (Exception e) {
+                    ServerError(String.valueOf(e));
+                }
+            }
+        });
+        Language.addLanguage(langb);
+        langb.setOnAction(actionEvent -> {
+            new Language().changeLanguage(langb.getValue());
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("window.fxml"), StartWindow.resourceBundle);
+                Scene scene = new Scene(fxmlLoader.load(), 640, 452);
+                Stage stage = (Stage) langb.getScene().getWindow();
+                stage.close();
+                stage.setTitle("I1 collection");
+                stage.setResizable(false);
+                stage.setScene(scene);
+                stage.show();
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        });
         choseUser.getItems().add("Сменить пользователя");
         choseUser.getItems().add("Добавить пользователя");
         choseUser.getItems().add("Вернуться в главное меню");
 
         choseUser.setOnAction(actionEvent -> {
-            if(choseUser.getValue().equals("Сменить пользователя")) {
+            if (choseUser.getValue().equals("Сменить пользователя")) {
                 System.out.println("Сменить пользователя");
                 try {
                     Stage stage = (Stage) choseUser.getScene().getWindow();
                     stage.close();
-                    FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("loginWindow.fxml"));
-                    Scene scene = new Scene(fxmlLoader.load(), 640, 452);stage.setTitle("I1 collection");
-                    stage.setResizable(false);stage.setScene(scene);stage.show();
-                }catch (Exception e){
+                    FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("loginWindow.fxml"), StartWindow.resourceBundle);
+                    Scene scene = new Scene(fxmlLoader.load(), 640, 452);
+                    stage.setTitle("I1 collection");
+                    stage.setResizable(false);
+                    stage.setScene(scene);
+                    stage.show();
+                } catch (Exception e) {
                     System.out.println(e);
                 }
             }
-            if (choseUser.getValue().equals("Добавить пользователя")){
+            if (choseUser.getValue().equals("Добавить пользователя")) {
                 System.out.println("Добавить пользователя");
                 try {
                     Stage stage = (Stage) choseUser.getScene().getWindow();
                     stage.close();
-                    FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("RegWindow.fxml"));
-                    Scene scene = new Scene(fxmlLoader.load(), 640, 452);stage.setTitle("I1 collection");
-                    stage.setResizable(false);stage.setScene(scene);stage.show();
-                }catch (Exception e){
+                    FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("RegWindow.fxml"), StartWindow.resourceBundle);
+                    Scene scene = new Scene(fxmlLoader.load(), 640, 452);
+                    stage.setTitle("I1 collection");
+                    stage.setResizable(false);
+                    stage.setScene(scene);
+                    stage.show();
+                } catch (Exception e) {
                     System.out.println(e);
                 }
             }
-            if(choseUser.getValue().equals("Вернуться в главное меню")){
+            if (choseUser.getValue().equals("Вернуться в главное меню")) {
                 System.out.println("Вернуться в главное меню");
                 try {
                     Stage stage = (Stage) choseUser.getScene().getWindow();
                     stage.close();
-                    FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("StartWindow.fxml"));
-                    Scene scene = new Scene(fxmlLoader.load(), 640, 452);stage.setTitle("I1 collection");
-                    stage.setResizable(false);stage.setScene(scene);stage.show();
-                }catch (Exception e){
+                    FXMLLoader fxmlLoader = new FXMLLoader(StartWindow.class.getResource("StartWindow.fxml"), StartWindow.resourceBundle);
+                    Scene scene = new Scene(fxmlLoader.load(), 640, 452);
+                    stage.setTitle("I1 collection");
+                    stage.setResizable(false);
+                    stage.setScene(scene);
+                    stage.show();
+                } catch (Exception e) {
                     System.out.println(e);
                 }
             }
         });
-
-
-
-
-
-        assert addb != null : "fx:id=\"addb\" was not injected: check your FXML file 'window.fxml'.";
-        assert b3137 != null : "fx:id=\"b3137\" was not injected: check your FXML file 'window.fxml'.";
-        assert choseUser != null : "fx:id=\"choseUser\" was not injected: check your FXML file 'window.fxml'.";
-        assert clearb != null : "fx:id=\"clearb\" was not injected: check your FXML file 'window.fxml'.";
-        assert exitb != null : "fx:id=\"exitb\" was not injected: check your FXML file 'window.fxml'.";
-        assert filterCarCodeb != null : "fx:id=\"filterCarCodeb\" was not injected: check your FXML file 'window.fxml'.";
-        assert gayChecker != null : "fx:id=\"gayChecker\" was not injected: check your FXML file 'window.fxml'.";
-        assert helpb != null : "fx:id=\"helpb\" was not injected: check your FXML file 'window.fxml'.";
-        assert historyb != null : "fx:id=\"historyb\" was not injected: check your FXML file 'window.fxml'.";
-        assert infob != null : "fx:id=\"infob\" was not injected: check your FXML file 'window.fxml'.";
-        assert insertAtb != null : "fx:id=\"insertAtb\" was not injected: check your FXML file 'window.fxml'.";
-        assert langb != null : "fx:id=\"langb\" was not injected: check your FXML file 'window.fxml'.";
-        assert removeClimateb != null : "fx:id=\"removeClimateb\" was not injected: check your FXML file 'window.fxml'.";
-        assert removeIDb != null : "fx:id=\"removeIDb\" was not injected: check your FXML file 'window.fxml'.";
-        assert removeLastB != null : "fx:id=\"removeLastB\" was not injected: check your FXML file 'window.fxml'.";
-        assert showb != null : "fx:id=\"showb\" was not injected: check your FXML file 'window.fxml'.";
-        assert shuffleb != null : "fx:id=\"shuffleb\" was not injected: check your FXML file 'window.fxml'.";
-        assert updateb != null : "fx:id=\"updateb\" was not injected: check your FXML file 'window.fxml'.";
-
     }
 
     void ServerError(String text){
         hide();scrolleeeeer.setVisible(true);
-        infoShower.setText(text); infoShower.setVisible(true);
+        if(connectionMess!= null){infoShower.setText(connectionMess);}
+        else {infoShower.setText(text);}infoShower.setVisible(true);
     }
     void hide(){
+        deleteRow.setVisible(false);
+        graphic.setVisible(false);
+        updateIdField.setVisible(false);
         table.setVisible(false);
         tableb.setVisible(false);
         map.setVisible(false);
@@ -302,6 +636,11 @@ public class WindowController {
         climateF.setVisible(flag);
         StandartOfLivingF.setVisible(flag);
         governorF.setVisible(flag);
+        climatetext.setVisible(flag);
+        standOfLivText.setVisible(flag);
+        enterForAddButton.setVisible(flag);
+        aux1.setVisible(flag);
+        aux2.setVisible(flag);
     }
     String getDataFromAdd(){
 
@@ -312,24 +651,30 @@ public class WindowController {
                 !Objects.equals(areaF.getText(), "") &&
                 !Objects.equals(populationF.getText(), "") &&
                 !Objects.equals(carCodeF.getText(), "") &&
-                !Objects.equals(metersSeaLevelF.getText(), "")
+                !Objects.equals(metersSeaLevelF.getText(), "")&&
+                !Objects.equals(StandartOfLivingF.getValue(), null)&&
+                !Objects.equals(climateF.getValue(), null)
         ){
             return
-                    nameF.getText() + " " +
-                    xF.getText() + " " +
-                    yF.getText() + " " +
-                    areaF.getText() + " " +
-                    populationF.getText() + " " +
-                    carCodeF.getText() + " " +
-                    metersSeaLevelF.getText() + " " +
-                    // climateF.setVisible(true);
-                    //StandartOfLivingF.setVisible(true);
-                    governorF.getText();
+                    nameF.getText() + ", " +
+                    Long.valueOf(xF.getText()) + " " +
+                    Long.valueOf(yF.getText()) + ", " +
+                    "2022-06-10T00:43:48.073, "+
+                    Integer.valueOf(areaF.getText()) + ", " +
+                    Long.valueOf(populationF.getText()) + ", " +
+                    Long.valueOf(carCodeF.getText()) + ", " +
+                    Long.valueOf(metersSeaLevelF.getText()) + ", " +
+                    climateF.getValue()+", " +
+                    StandartOfLivingF.getValue()+", " +
+                    Float.valueOf(governorF.getText());
+
         }else return "дичь";
     }
 
     void clearData(){
-        nameF.clear();xF.clear();yF.clear();areaF.clear();populationF.clear();carCodeF.clear();metersSeaLevelF.clear();governorF.clear();
+        nameF.clear();xF.clear();yF.clear();areaF.clear();populationF.clear();
+        carCodeF.clear();metersSeaLevelF.clear();governorF.clear();
+        StandartOfLivingF.setValue(null);climateF.setValue(null);
     }
 
     void setWindowSizeY(int plane, int scrol){
@@ -342,7 +687,6 @@ public class WindowController {
         scrolleeeeer.setPrefWidth(scrol);
         scrolleeeeer.setVisible(true);
     }
-
     void setCollums(String answer){
         Stack<City> cityCollection = new CollectionManager().setCityCollection(answer);
         usersData.addAll(cityCollection);
@@ -372,6 +716,18 @@ public class WindowController {
         userC.setSortType(TableColumn.SortType.DESCENDING);
 
         table.setItems(usersData);
-
+    }
+    void drawAxis(GraphicsContext context){
+        //context.setFill(Color.color(55,55,55));
+        context.beginPath();
+        context.moveTo(180, 1);
+        context.lineTo(180, 2000);
+        context.stroke();
+        context.closePath();
+        context.beginPath();
+        context.moveTo(1, 180);
+        context.lineTo(2000, 180);
+        context.stroke();
+        context.closePath();
     }
 }

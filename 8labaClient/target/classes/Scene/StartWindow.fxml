@@ -16,7 +16,7 @@
             <Image url="@../img/StartImg.png" />
          </image>
       </ImageView>
-      <Text layoutX="194.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выход" textAlignment="CENTER" wrappingWidth="254.93670654296875">
+      <Text fx:id="out" layoutX="194.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%Выход" textAlignment="CENTER" wrappingWidth="254.93670654296875">
          <font>
             <Font size="24.0" />
          </font>
@@ -32,7 +32,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Text layoutX="194.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация" textAlignment="CENTER" wrappingWidth="254.93670654296875">
+      <Text fx:id="reg" layoutX="194.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%Регистрация" textAlignment="CENTER" wrappingWidth="254.93670654296875">
          <font>
             <Font size="24.0" />
          </font>
@@ -48,7 +48,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Text layoutX="194.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вход" textAlignment="CENTER" wrappingWidth="254.93670654296875">
+      <Text fx:id="enter" layoutX="194.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%enter" textAlignment="CENTER" wrappingWidth="254.93670654296875">
          <font>
             <Font size="24.0" />
          </font>
